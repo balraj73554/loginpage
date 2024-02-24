@@ -1,0 +1,75 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.full-screen-container{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/loginPageBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    width:45%;
+    min-width: 300px;
+    background-color: rgba(20, 38, 38, 0.718);
+    padding:2em;
+    box-shadow: 0 0 10px 1px black;
+    border-radius: .3em;
+}
+.heading{
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-align: center;
+    color:white;
+    margin-bottom: 2.3em;
+}
+.main-form{
+    display: flex;
+    flex-direction: column;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+}
+.login-form label{
+    color:white;
+    font-size: 1.2em;
+}
+.login-form .email-input,.password-input{
+    cursor:pointer;
+    padding: .4em;
+    border: none;
+    outline: none;
+    background-color: rgba(156, 172, 172, 0.676);
+    font-size: 1.2em;
+    border-radius: .2em;
+    color:white;
+}
+.login-form input.success,.login-form input.failur{
+    box-shadow: 0 0 3px 0 rgba(41, 98, 221, 0.766);
+}
+
+.login-form input:focus{
+    box-shadow: 0 0 2px 0 red;   
+}
+.submit-btn{
+    margin-top:2em;
+    font-size: 1.3em;
+    border: none;
+    border-radius: .1em;
+    padding: .3em;
+    background-color: rgba(240, 248, 255, 0.739);
+    color:black;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: aliceblue;
+}
